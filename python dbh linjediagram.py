@@ -1,4 +1,4 @@
-## utvid med tabell https://plotly.com/python/figure-factory-table/
+## utvid med tabell https://plotly.com/python/figure-factory-table/ eller https://plotly.com/python/table/
 
 import requests
 import plotly.express as px
