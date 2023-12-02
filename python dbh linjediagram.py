@@ -134,69 +134,69 @@ nr=0
 for n in liste:
    fig.add_scatter(x=årstall, y=n, name=Studieprogramkode[nr], line={'color': colors[nr], 'width':2}, marker={'color': colors[nr], 'size': 7})
    nr = nr + 1
-
+   
 fig.update_layout(
-   showlegend= True,
-   legend= {
-    'x': 1,
-    'y': 0.5
-  },
-   height= 600,
-   width= 650,
-   plot_bgcolor="white",
+   autosize = False,
+   height = 600,
+   width = 650,
+   plot_bgcolor = "white",
+   showlegend = True,
+   legend = {
+      'x': 1,
+      'y': 0.5
+   },
    xaxis = dict(
       tickmode = 'linear',
-      title="",
+      title = "",
       tick0 = 1,
       dtick = 1,
       fixedrange = True,
-      showline= True,
-      showgrid= False,
-      showticklabels= True,
-      linecolor= 'rgb(204,204,204)',
-      linewidth= 1,
-      ticks= 'outside',
-      tickcolor= 'rgb(204,204,204)',
-      tickwidth= 1,
-      ticklen= 5,
-      tickfont= {
+      showline = True,
+      showgrid = False,
+      showticklabels = True,
+      linecolor = 'rgb(204,204,204)',
+      linewidth = 1,
+      ticks = 'outside',
+      tickcolor = 'rgb(204,204,204)',
+      tickwidth = 1,
+      ticklen = 0,
+      tickfont = {
          'family': 'Arial',
          'size': 12,
          'color': 'rgb(82, 82, 82)'
          }
-    ),
-   yaxis= dict(
-      title="",
-  	   fixedrange= True,
-      showgrid= True,
-      zeroline= False,
-      showline= False,
-      showticklabels= True
    ),
-   autosize= False,
+   yaxis = dict(
+      title = "",
+  	   fixedrange = True,
+      showgrid = True,
+      zeroline = False,
+      showline = False,
+      showticklabels = True
+   ),
    margin= {
       'autoexpand': False,
       'l': 30,
       'r': 120,
       't': 5
-  },
-  annotations= [
-    {
-      'xref': 'paper',
-      'yref': 'paper',
-      'x': 0.0,
-      'y': 0.05,
-      'xanchor': 'left',
-      'yanchor': 'bottom',
-      'text': '',
-      'font':{
-        'family': 'Arial',
-        'size': 30,
-        'color': 'rgb(37,37,37)'
-      },
-      'showarrow': False
-    }
-  ]
+   },
+   annotations= [
+      {
+         'xref': 'paper',
+         'yref': 'paper',
+         'x': 0.0,
+         'y': 0.05,
+         'xanchor': 'left',
+         'yanchor': 'bottom',
+         'text': '',
+         'font':{
+            'family': 'Arial',
+            'size': 30,
+            'color': 'rgb(37,37,37)'
+         },
+         'showarrow': False
+      }
+   ]
 )
 
 # show the plot
