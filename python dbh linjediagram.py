@@ -1,3 +1,5 @@
+## utvid med tabell https://plotly.com/python/figure-factory-table/
+
 import requests
 import plotly.express as px
 
